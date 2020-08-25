@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <h1>Hello, {{ username }}.</h1>
+    <p>Your most recent frame is: <b>{{ title }}</b></p>
+    <br>
+    <img class="theimage" src="{{ image }}" alt=""></img>
+{% endblock %}

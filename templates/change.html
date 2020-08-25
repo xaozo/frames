@@ -1,0 +1,29 @@
+{% extends "layout2.html" %}
+
+{% block title %}
+    Change Password
+{% endblock %}
+
+{% block main %}
+    <form action="/change" method="post">
+        <h1>Change your password regularly.</h1>
+        <br>
+        <div class="form-group">
+            <input class="form-control" name="newpass" placeholder="New Password" type="password">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="newconfirmation" placeholder="Confirm New Password" type="password">
+        </div>
+        <br>
+        <p>Password must contain at least:</p>
+        <ul>
+            <li>8 characters</li>
+            <li>1 uppercase letter</li>
+            <li>1 lowercase letter</li>
+            <li>1 number</li>
+            <li>1 special symbol</li>
+        </ul>
+        <br>
+        <button class="btn btn-primary" type="submit">Change Password</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Location: {{ username }}
+{% endblock %}
+
+{% block main %}
+    <h1>{{ username }}'s location</h1>
+    <br>
+    <p>Address: {{ address }}</p>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+        // location of user
+        var loc = {lat: {{ lat }}, lng: {{ lng }}};
+        // center map at location
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 17, center: loc});
+        // position marker at location
+        var marker = new google.maps.Marker({position: loc, map: map});
+        }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZqKvc9j0YR3Vl7w2r2Nn80rkPtoAYato&callback=initMap">
+    </script>
+{% endblock %}

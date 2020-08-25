@@ -1,0 +1,154 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+    font-family: "Helvetica Neue";
+}
+
+/* colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+#file
+{
+    text-align: center;
+}
+
+body
+{
+    background-color: #F6F6F6;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+
+    font-family: "Helvetica Neue";
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+h1
+{
+    font-size: 52px;
+}
+
+p
+{
+    font-size: 20px;
+}
+
+p.occupation
+{
+    font-size: 16px;
+}
+
+ul
+{
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0px;
+    font-family: "Helvetica Neue";
+}
+
+table
+{
+    width: 100%;
+    margin: 20px auto;
+    table-layout: auto;
+}
+
+table, td, th
+{
+    border-collapse: collapse;
+}
+
+td, th
+{
+    padding: 10px;
+    border: solid 0.25px;
+    text-align: center;
+}
+
+th
+{
+    background-color: gainsboro;
+}
+
+td
+{
+    background-color: #F6F6F6;
+    height: 150px;
+}
+
+td.image
+{
+    width: 400px;
+}
+
+td.info
+{
+    font-size: 28px;
+    vertical-align: middle;
+    width: 200px;
+}
+
+.theimage
+{
+    height: 400px;
+    align-content: center;
+}
+
+h3
+{
+    text-align: left;
+    font-size: 36px;
+}
+
+.caption, #user a
+{
+    display: block;
+    font-size: 18px;
+    text-align: left;
+    align-content: left;
+    color: white;
+}
+
+#map
+{
+    height: 400px;  /* The height is 400 pixels */
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
